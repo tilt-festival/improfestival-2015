@@ -35,7 +35,7 @@ items:
           deploymentconfig: improfestival-2015
       spec:
         containers:
-        - image: improvjaa/improfestival-2015@sha256:ffba10d0c2f7bdbdefca85e3eb525fb3db5e5afbbd9468e0085aef0c9eaacaf9
+        - image: tiltfestival/improfestival-2015
           imagePullPolicy: Always
           livenessProbe:
             failureThreshold: 3

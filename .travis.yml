@@ -1,0 +1,13 @@
+sudo: required
+language: node_js
+node_js:
+  - 9
+services:
+  - docker
+before_install:
+  - docker login -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD"
+  - docker build -t tiltfestival/improfestival-2015 .
+script:
+  - docker push tiltfestival/improfestival-2015
+after_script:
+  - docker logout

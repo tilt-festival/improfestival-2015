@@ -1,6 +1,6 @@
 improfestival-2015:
   image: nginx
   ports:
-    - 80:80
+    - 8080:8080
   volumes:
     - ./html:/usr/share/nginx/html:ro

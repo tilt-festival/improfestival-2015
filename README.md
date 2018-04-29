@@ -11,7 +11,7 @@ This is the homepage for the 3rd international improv festival Tilt (2015).
 Run the image:
 
 ```
-docker run -p 80:80 improvjaa/improfestival-2015
+docker run -p 8080:8080 tiltfestival/improfestival-2015
 ```
 
 This will start a Nginx webserver image listening on port 80.
